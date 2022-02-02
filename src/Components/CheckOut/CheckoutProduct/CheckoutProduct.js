@@ -10,10 +10,11 @@ const CheckoutProduct = ({ id, image, title, price, rating }) => {
         dispatch({
             type: 'REMOVE_FROM_BASKET',
             id: id,
-            
+
         })
     }
     return (
+
         <div className='checkoutProduct'>
             <img className='checkoutProduct_image' src={ image } alt="" />
             <div className='checkoutProduct_info'>
@@ -29,6 +30,7 @@ const CheckoutProduct = ({ id, image, title, price, rating }) => {
                 <button onClick={ removeFromBasket } className='checkout_button'>Remove from Basket</button>
             </div>
         </div>
+
     );
 };
 
